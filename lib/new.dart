@@ -178,15 +178,15 @@ class _BMICalculatorState extends State<BMICalculator> {
                               children: [
                                 Expanded(
                                     child: IconButton(
-                                      onPressed: () {
-                                        weight++;
-                                        setState(() {});
-                                      },
-                                      icon: Icon(
-                                        Icons.plus_one,
-                                        size: 50,
-                                      ),
-                                    )),
+                                  onPressed: () {
+                                    weight++;
+                                    setState(() {});
+                                  },
+                                  icon: Icon(
+                                    Icons.plus_one,
+                                    size: 50,
+                                  ),
+                                )),
                                 Expanded(
                                   child: IconButton(
                                       onPressed: () {
@@ -218,11 +218,9 @@ class _BMICalculatorState extends State<BMICalculator> {
                     print(age);
                     print("BMI:${weight / ((height / 100) * (height / 100))} ");
                   },
-                  child: Center(
-                    child: Text(
-                      'caculate',
-                      style: TextStyle(fontSize: 35),
-                    ),
+                  child: Text(
+                    'caculate',
+                    style: TextStyle(fontSize: 35),
                   ),
                 ),
               )
